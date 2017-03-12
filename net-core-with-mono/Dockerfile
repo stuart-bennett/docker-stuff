@@ -11,8 +11,3 @@ RUN mkdir /git-repos && \
     git clone https://github.com/OmniSharp/omnisharp-roslyn.git && \
     cd omnisharp-roslyn && \
     ./build.sh
-
-
-
-    
-
