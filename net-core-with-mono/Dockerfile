@@ -4,7 +4,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
     echo "deb http://download.mono-project.com/repo/debian wheezy main" | tee /etc/apt/sources.list.d/mono-xamarin.list && \
     echo "deb http://download.mono-project.com/repo/debian wheezy-libjpeg62-compat main" | tee -a /etc/apt/sources.list.d/mono-xamarin.list && \
     apt-get update && \
-    apt-get install -y mono-devel git-core
+    apt-get install -y mono-devel git-core msbuild
 
 RUN mkdir /git-repos && \
     cd /git-repos && \
